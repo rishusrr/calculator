@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap');
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: #f0faf7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    background-color: rgb(198, 120, 240);
+}
+.container {
+    font-family: 'Electrolize', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    width: 27rem;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 
+      inset 0 0 15px rgba(55, 84, 170,0),
+      inset 0 0 20px rgba(255, 255, 255,0),
+      7px 7px 15px rgba(55, 84, 170,.15),
+      -7px -7px 20px rgb(12, 12, 12),
+      inset 0px 0px 4px rgba(12, 12, 12, 0.2);
+}
+
+.btnContainer {
+    width: 85%;
+    display: grid;
+    position: relative;
+    top: 4rem;
+    left: 0.4rem;
+    grid-gap: 01.2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 4rem);
+}
+
+.screen {
+    width: 80%;
+    height: 2rem;
+    font-family: 'Mulish', sans-serif;
+    grid-column: 1/-1;
+    position: relative;
+    top: 1.5rem;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.3rem 0;
+    overflow-y: hidden;
+    color: rgb(20, 20, 20);
+    border-bottom:2px solid rgb(15, 15, 15);
+}
+
+.button {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.7rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-top: 0.2rem;
+    position: relative;
+    font-weight: 400;
+    transition: 0.1s;
+    color: rgb(19, 18, 18);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 10px rgba(19, 19, 19, 0.5);
+}
+
+.button:active {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 10px rgba(10, 10, 10, 0.5),
+    inset -5px -5px 5px rgba(19, 18, 18, 0.36),
+    inset 5px 5px 5px rgba(0,0,0,0.09),
+    inset 5px 5px 10px rgba(0,0,0,0.07);
+}
+
+.btnContainer div:nth-child(19) {
+    color: rgb(21, 21, 21);
+    background-color: #ada5f8;
+    grid-column: 3/5;
+    grid-row: 5/6;
+    padding: 0 0.6rem;
+    border-radius: 1.5rem;
+}
+
+.btnContainer div:nth-child(19):active {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 10px rgba(5, 5, 5, 0.5),
+    inset -5px -5px 5px rgba(14, 13, 13, 0.1),
+    inset 5px 5px 5px rgba(0,0,0,0.09),
+    inset 5px 5px 10px rgba(0,0,0,0.07);
+}
+
+.logo {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    cursor: default;    color: rgb(15, 15, 15);
+}
